@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:16px;
+}
+
+.inizio{
+    font-size:50px;
+    color:red;
+    padding:20px;
+    background-color: #000;
+}
+
+
+.container{
+    width: 800px;
+    height:500px;
+    margin: 50px 10%;
+    position:relative;
+}
+
+.item{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    display:none;
+}
+.immagine{
+    width:100%;
+    height:100%;
+    
+}
+.item.active{
+    display:block;
+}
+.dot.active{
+    background-color:#fff;
+    opacity:1;
+    border: 1px solid red;
+}
+
+
+.dot{
+    width:20%;
+    height:20%;
+    background-color:grey;
+    position:absolute;
+    right: 0;
+    z-index:2;
+    opacity:30%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.one{
+    top: 0%;
+    background-image: url(../img/01.webp);
+}
+.two{
+    top: 20%;
+    background-image: url(../img/02.webp);
+}
+.three{
+    top:40%;
+    background-image: url(../img/03.webp);
+    background-size:cover;
+}
+.four{
+    top:60%;
+    background-image: url(../img/04.webp);
+    background-size:cover;
+}
+.five{
+    top:80%;
+    background-image: url(../img/05.webp);
+}
+
+.icon{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity:0.1;
+    color:#000;
+    padding: 6px;
+    position:absolute;
+    right:5%;
+    z-index:3
+}
+
+.next{
+    bottom: 3%;
+}
+.prev{
+    top: 3%;
+}
+
+.icon:hover{
+    opacity:1;
+}
